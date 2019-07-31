@@ -1,0 +1,91 @@
+@import '_reset'
+@import '_font-var'
+@import 'grid'
+@import 'layout'
+
+.login-content
+	width: 100%
+	height: auto
+	background-color: rgba(125,125,125,0.15)
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding-top: 30px
+	padding-bottom: 30px 
+	h3
+		font-size: 48px
+		color: $main-color
+		font-family: NotoSansCJKtc-Black
+	h4
+		font-size: 20px
+		color: $main-color 
+		font-family: NotoSansCJKtc-Black
+		line-height: 30px
+
+.loginform
+	width: 300px
+	height: 273px
+	background-color: #EFE9E7 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 30px
+	border-top: 3px solid #FF5E45
+	box-shadow: 3px 3px  5px rgba(125,125,125,0.5)
+	h3
+		font-size: $font-h3
+		color: $main-color
+		margin-top: 10px
+
+.logininfo
+	max-width: 270px
+	height: auto
+	.emailicon 
+		position: relative
+		margin: 0px
+		i
+			position: absolute
+			top: 13px
+			left: 5px
+			color: rgba(0,0,0,0.35)
+
+	a
+		font-family: $font-mainfamily
+		font-size: 14px
+		color: #FF5E45
+		line-height: 25px
+	label
+		font-size: $font-p
+		font-family: $font-mainfamily
+		color: $main-color
+		margin-top: 10px
+		display: block
+
+	input
+		border-style: none
+		width: 270px
+		height: 32px
+		border-radius: 3px
+		margin-top: 5px
+		text-indent: 23px
+
+.login-button
+	width: 90%
+	height: auto
+	display: flex
+	justify-content: space-between
+	margin-top: 40px
+	button
+		width: 125px
+		height: 32px
+		border-style: none
+		display: block
+		background-color: rgba(0,0,0,0.35)
+		border-radius: 3px
+		font-size: 14px
+		font-family: PingFangTC-Regular
+		color: #fff
+	.login-send
+		 background-color: #F56C23
+
+

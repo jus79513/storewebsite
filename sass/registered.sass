@@ -1,0 +1,116 @@
+@import '_reset'
+@import '_font-var'
+@import 'grid'
+@import 'layout'
+
+.register-content
+	width: 100%
+	height: auto
+	background-color: rgba(125,125,125,0.15)
+	display: flex
+	flex-direction: column
+	align-items: center
+	padding-top: 30px
+	h3
+		font-size: 48px
+		color: #3D1101
+		font-family: NotoSansCJKtc-Black
+
+	h4
+		font-size: 20px
+		color: #3D1101
+		font-family: NotoSansCJKtc-Black
+		line-height: 30px
+
+.registerform
+	width: 620px
+	height: 316px
+	background-color:#EFE9E7 100%
+	display: flex
+	flex-direction: column
+	align-items: center
+	margin-top: 30px
+	border-top: 3px solid #FF5E45
+	box-shadow: 3px 3px  5px rgba(125,125,125,0.5)
+	@include iphone
+		width: 300px
+		height: auto
+	h3
+		font-size: 18px
+		color: #3D1101
+		margin-top: 10px
+
+.register-use
+	width: 100%
+	display: flex
+	justify-content: space-around
+	margin-top: 20px
+	@include iphone
+		width: auto
+		flex-direction: column
+		align-items: center
+
+.terms-text
+	max-width: 285px
+	height: auto
+	@include iphone
+		max-width: 270px
+
+.registerinfo
+	max-width: 285px
+	height: auto
+	@include iphone
+		margin-top: 15px
+	label
+		font-size: 16px
+		font-family: 微軟正黑體
+		color: #3D1101
+		margin-top: 10px
+		display: block
+	input
+		border-style: none
+		width: 285px
+		height: 32px
+		border-radius: 3px
+		margin-top: 5px
+		text-indent: 23px
+		@include iphone
+			width: 270px
+	.emailicon 
+		position: relative
+		margin: 0px
+		i
+			position: absolute
+			top: 13px
+			left: 5px
+			color: grey
+
+	a
+		font-family: 微軟正黑體
+		font-size: 14px
+		color: #FF5E45
+		line-height: 25px
+
+.register-button
+	width: 90%
+	height: auto
+	display: flex
+	justify-content: flex-end
+	margin-top: 20px
+	@include iphone
+		margin-bottom: 20px
+	button
+		width: 125px
+		height: 32px
+		border-style: none
+		display: block
+		background-color: grey
+		border-radius: 3px
+		font-size: 14px
+		font-family: PingFangTC-Regular
+		color: #fff
+	.register-send
+		background-color: #F56C23
+
+
+

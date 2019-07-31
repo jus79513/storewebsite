@@ -1,0 +1,21 @@
+// @import '_reset'
+// @import '_layout'
+
+
+@mixin pad
+	@media(max-width:768px)
+		@content
+
+
+
+.test
+	background-color: #E60000
+	width: 100px
+	height: 50px
+
+@include pad()
+	.test
+		width: 50px
+
+
+
